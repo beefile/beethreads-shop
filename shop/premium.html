@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beethreads | Premium Bouquets</title>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar p-0" aria-label="Main navigation">
+        <div class="desktop-nav d-none d-lg-grid w-100 py-3 align-items-center">
+          <div><a href="../index.html" class="brand-name text-decoration-none">beethreads</a></div>
+          <div class="text-center">
+            <a href="../index.html" class="d-inline-block" aria-label="Beethreads home">
+              <img src="../images/logo.png" alt="Beethreads logo" class="site-logo">
+            </a>
+          </div>
+          <ul class="nav justify-content-end gap-3">
+            <li class="nav-item"><a class="nav-link p-0" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="../about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-top d-flex d-lg-none w-100 py-3 align-items-center justify-content-between">
+          <a href="../index.html" class="d-inline-block" aria-label="Beethreads home">
+            <img src="../images/logo.png" alt="Beethreads logo" class="site-logo">
+          </a>
+          <button id="menuToggleBtn" class="navbar-toggler border-0 p-0" type="button" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shop-main py-4">
+    <div class="container">
+      <section class="shop-hero text-center">
+        <h1 class="shop-title">BOUQUETS</h1>
+        <p class="shop-subtext mb-0">These are our top picks, but we love making your custom ideas come to life!</p>
+      </section>
+
+      <section class="shop-categories py-4 py-lg-5">
+        <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
+          <a href="bouquets.html" class="shop-chip">classic</a>
+          <a href="mini.html" class="shop-chip">mini</a>
+          <a href="premium.html" class="shop-chip">premium</a>
+          <a href="custom.html" class="shop-chip">custom</a>
+        </div>
+      </section>
+
+      <section class="shop-products">
+        <h2 class="shop-section-title text-center mb-3">Premium Bouquets</h2>
+        <div class="shop-section-divider mx-auto mb-4" aria-hidden="true"></div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap product-image-placeholder"></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap product-image-placeholder"></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap product-image-placeholder"></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap product-image-placeholder"></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap product-image-placeholder"></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap product-image-placeholder"></div></article></div>
+        </div>
+
+        <div class="text-end mt-4 mt-lg-5">
+          <a href="custom.html" class="btn-next-arrow" aria-label="Go to custom bouquets">&#8594;</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="footer-divider" aria-hidden="true"></div>
+  </div>
+
+  <footer class="site-footer py-4 py-lg-5">
+    <div class="container">
+      <div class="row g-4 g-lg-5 align-items-stretch">
+        <div class="col-12 col-lg-7">
+          <h2 class="footer-title mb-3">got an idea?</h2>
+          <form id="ideaForm" class="idea-form" data-recipient="vhinamaypalomar@gmail.com">
+            <label for="ideaMessage" class="visually-hidden">Share your idea</label>
+            <div class="idea-field">
+              <textarea id="ideaMessage" class="form-control idea-input" rows="3" placeholder="Tell me what you have in mind..."></textarea>
+              <button type="submit" class="footer-send-btn">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="footer-side h-100">
+            <div class="socials-title">my socials</div>
+            <div class="social-links d-flex align-items-center gap-3 mb-3">
+              <a href="https://www.facebook.com/b.eethreads" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/b.eethreads/" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/@b.eethreads" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            </div>
+            <div class="footer-copy">&copy; 2026 Beethreads</div>
+            <div class="footer-note">made with love &mdash; developed by yours truly</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="mobileMenu" class="mobile-menu-overlay d-lg-none" aria-hidden="true">
+    <button id="menuCloseBtn" class="mobile-menu-close btn p-0 border-0" type="button" aria-label="Close menu">&times;</button>
+    <nav class="h-100" aria-label="Mobile navigation">
+      <ul class="mobile-menu-links nav flex-column h-100 align-items-center justify-content-center text-center gap-4">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html" aria-current="page">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
