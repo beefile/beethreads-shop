@@ -642,6 +642,16 @@ body.is-loaded {
   max-width: 760px;
 }
 
+#priceListModal .modal-content {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+#priceListModal .modal-body {
+  padding: 0;
+}
+
 #priceListCarousel .carousel-item {
   text-align: center;
 }
