@@ -67,9 +67,15 @@
         <div class="shop-section-divider mx-auto mb-4" aria-hidden="true"></div>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5">
-          <div class="col"><article class="product-card h-100"><div class="product-image-wrap"><img src="../images/01CM.png" alt="Custom bouquet 01" class="product-image js-lightbox-image"></div><div class="product-meta"><div class="product-topline"><span class="product-name">01 Classic Bloom</span><span class="product-price">PHP 90</span></div><p class="product-details mb-0">Tulip, Daisy &amp; Sunflower</p></div></article></div>
-          <div class="col"><article class="product-card h-100"><div class="product-image-wrap"><img src="../images/02CM.png" alt="Custom bouquet 02" class="product-image js-lightbox-image"></div><div class="product-meta"><div class="product-topline"><span class="product-name">02 Spring Mix</span><span class="product-price">PHP 110</span></div><p class="product-details mb-0">Rose, Tulip &amp; Baby&rsquo;s Breath</p></div></article></div>
-          <div class="col"><article class="product-card h-100"><div class="product-image-wrap"><img src="../images/03CM.png" alt="Custom bouquet 03" class="product-image js-lightbox-image"></div><div class="product-meta"><div class="product-topline"><span class="product-name">03 Sunny Day</span><span class="product-price">PHP 120</span></div><p class="product-details mb-0">Sunflower, Carnation &amp; Daisy</p></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap"><img src="../images/01CM.png" alt="Custom bouquet 01" class="product-image js-lightbox-image"></div><div class="product-meta"><div class="product-topline"><span class="product-name">01 Chihiro&rsquo;s Sweat Pea</span><span class="product-price">PHP 899</span></div><p class="product-details mb-0"></p></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap"><img src="../images/02CM.png" alt="Custom bouquet 02" class="product-image js-lightbox-image"></div><div class="product-meta"><div class="product-topline"><span class="product-name">02 Chunky Bouquet</span><span class="product-price">Starts at PHP 750</span></div><p class="product-details mb-0"></p></div></article></div>
+          <div class="col"><article class="product-card h-100"><div class="product-image-wrap"><img src="../images/03CM.png" alt="Custom bouquet 03" class="product-image js-lightbox-image"></div><div class="product-meta"><div class="product-topline"><span class="product-name">03 Single Thai Rose</span><span class="product-price">PHP 450</span></div><p class="product-details mb-0">for custom</p></div></article></div>
+        </div>
+
+        <div class="custom-note text-center mt-4 mt-lg-5">
+          <div class="custom-note-divider mx-auto" aria-hidden="true"></div>
+          <p class="custom-note-copy mb-2">For custom orders, you can send us your desired design.<br>Below are the rates for customizable flower bouquets.</p>
+          <button class="custom-preview-btn" type="button" data-bs-toggle="modal" data-bs-target="#priceListModal">See Price lsit</button>
         </div>
 
         <div class="text-end mt-4 mt-lg-5">
@@ -78,6 +84,42 @@
       </section>
     </div>
   </main>
+
+  <div class="modal fade" id="priceListModal" tabindex="-1" aria-labelledby="priceListModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="priceListModalLabel">Price List Preview</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="priceListCarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner rounded-3 overflow-hidden">
+              <div class="carousel-item active">
+                <img src="../images/P1.png" alt="Price list preview 1" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/P2.png" alt="Price list preview 2" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/P3.png" alt="Price list preview 3" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/P4.png" alt="Price list preview 4" class="d-block w-100">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#priceListCarousel" data-bs-slide="prev" aria-label="Previous image">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#priceListCarousel" data-bs-slide="next" aria-label="Next image">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <div class="footer-divider" aria-hidden="true"></div>

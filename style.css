@@ -488,27 +488,34 @@ body.is-loaded {
 
 .product-meta {
   padding: 0.75rem 0.1rem 0.1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 0.75rem;
+  row-gap: 0.18rem;
+  align-items: start;
 }
 
 .product-topline {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.75rem;
+  display: contents;
 }
 
 .product-name {
+  grid-column: 1;
   font-weight: 500;
   color: #2f2a26;
 }
 
 .product-price {
+  grid-column: 2;
+  justify-self: end;
   font-weight: 600;
+  font-size: 1.08rem;
   color: var(--dark-green);
   white-space: nowrap;
 }
 
 .product-details {
+  grid-column: 1;
   color: #7a6d6a;
   font-size: 0.92rem;
 }
@@ -588,6 +595,63 @@ body.is-loaded {
   transform: translateX(2px);
   background: rgba(53, 82, 43, 0.08);
   border-color: rgba(53, 82, 43, 0.8);
+}
+
+.custom-note {
+  max-width: 680px;
+  margin-inline: auto;
+}
+
+.custom-note-divider {
+  width: 72px;
+  height: 1px;
+  background: rgba(53, 82, 43, 0.32);
+  margin-bottom: 0.8rem;
+}
+
+.custom-note-copy {
+  color: #6f6461;
+  font-size: 1.08rem;
+}
+
+.custom-preview-btn {
+  border: 1px solid rgba(53, 82, 43, 0.56);
+  background: transparent;
+  color: var(--dark-green);
+  border-radius: 999px;
+  padding: 0.33rem 0.85rem;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.custom-preview-btn:hover {
+  background: rgba(53, 82, 43, 0.08);
+  border-color: rgba(53, 82, 43, 0.8);
+  transform: translateY(-1px);
+}
+
+#priceListCarousel .carousel-control-prev-icon,
+#priceListCarousel .carousel-control-next-icon {
+  background-color: rgba(20, 24, 18, 0.52);
+  border-radius: 999px;
+  background-size: 62% 62%;
+}
+
+#priceListModal .modal-dialog {
+  max-width: 760px;
+}
+
+#priceListCarousel .carousel-item {
+  text-align: center;
+}
+
+#priceListCarousel .carousel-item img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 65vh;
+  margin-inline: auto;
+  object-fit: contain;
 }
 
 .placeholder-main {
