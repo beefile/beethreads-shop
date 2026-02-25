@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,22 +18,22 @@
     <div class="container">
       <nav class="navbar p-0" aria-label="Main navigation">
         <div class="desktop-nav d-none d-lg-grid w-100 py-3 align-items-center">
-          <div><a href="/" class="brand-name text-decoration-none">beethreads</a></div>
+          <div><a href="../index.html" class="brand-name text-decoration-none">beethreads</a></div>
           <div class="text-center">
-            <a href="/" class="d-inline-block" aria-label="Beethreads home">
+            <a href="../index.html" class="d-inline-block" aria-label="Beethreads home">
               <img src="../images/logo.png" alt="Beethreads logo" class="site-logo">
             </a>
           </div>
           <ul class="nav justify-content-end gap-3">
-            <li class="nav-item"><a class="nav-link p-0" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link p-0" href="/about">About</a></li>
-            <li class="nav-item"><a class="nav-link p-0" href="/shop">Shop</a></li>
-            <li class="nav-item"><a class="nav-link p-0" href="/contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="../about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link p-0" href="../contact.html">Contact</a></li>
           </ul>
         </div>
 
         <div class="mobile-top d-flex d-lg-none w-100 py-3 align-items-center justify-content-between">
-          <a href="/" class="d-inline-block" aria-label="Beethreads home">
+          <a href="../index.html" class="d-inline-block" aria-label="Beethreads home">
             <img src="../images/logo.png" alt="Beethreads logo" class="site-logo">
           </a>
           <button id="menuToggleBtn" class="navbar-toggler border-0 p-0" type="button" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu">
@@ -55,10 +55,10 @@
 
       <section class="shop-categories py-4 py-lg-5">
         <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-3">
-          <a href="/shop/bouquets" class="shop-chip">classic</a>
-          <a href="/shop/mini" class="shop-chip">mini</a>
-          <a href="/shop/premium" class="shop-chip">premium</a>
-          <a href="/shop/custom" class="shop-chip">custom</a>
+          <a href="bouquets.html" class="shop-chip">classic</a>
+          <a href="mini.html" class="shop-chip">mini</a>
+          <a href="premium.html" class="shop-chip">premium</a>
+          <a href="custom.html" class="shop-chip">custom</a>
         </div>
       </section>
 
@@ -75,11 +75,11 @@
         <div class="custom-note text-center mt-4 mt-lg-5">
           <div class="custom-note-divider mx-auto" aria-hidden="true"></div>
           <p class="custom-note-copy mb-2">For custom orders, you can send us your desired design.<br>Below are the rates for customizable flower bouquets.</p>
-          <button class="custom-preview-btn" type="button" data-bs-toggle="modal" data-bs-target="#priceListModal">See Price lsit</button>
+          <button class="custom-preview-btn" type="button" data-bs-toggle="modal" data-bs-target="#priceListModal">See Price List</button>
         </div>
 
         <div class="text-end mt-4 mt-lg-5">
-          <a href="/shop/bouquets" class="btn-next-arrow" aria-label="Back to classic bouquets">&#8594;</a>
+          <a href="bouquets.html" class="btn-next-arrow" aria-label="Back to classic bouquets">&#8594;</a>
         </div>
       </section>
     </div>
@@ -89,32 +89,14 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title fs-5" id="priceListModalLabel">Price List Preview</h3>
+          <h3 class="modal-title fs-5" id="priceListModalLabel">Custom Bouquet Price List</h3>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div id="priceListCarousel" class="carousel slide" data-bs-interval="false">
-            <div class="carousel-inner rounded-3 overflow-hidden">
-              <div class="carousel-item active">
-                <img src="../images/P1.png" alt="Price list preview 1" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/P2.png" alt="Price list preview 2" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/P3.png" alt="Price list preview 3" class="d-block w-100">
-              </div>
-              <div class="carousel-item">
-                <img src="../images/P4.png" alt="Price list preview 4" class="d-block w-100">
-              </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#priceListCarousel" data-bs-slide="prev" aria-label="Previous image">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#priceListCarousel" data-bs-slide="next" aria-label="Next image">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+          <div class="row g-3">
+            <div class="col-12 col-md-4"><img src="../images/01CM.png" alt="Price list preview 1" class="img-fluid rounded-3"></div>
+            <div class="col-12 col-md-4"><img src="../images/02CM.png" alt="Price list preview 2" class="img-fluid rounded-3"></div>
+            <div class="col-12 col-md-4"><img src="../images/03CM.png" alt="Price list preview 3" class="img-fluid rounded-3"></div>
           </div>
         </div>
       </div>
@@ -158,10 +140,10 @@
     <button id="menuCloseBtn" class="mobile-menu-close btn p-0 border-0" type="button" aria-label="Close menu">&times;</button>
     <nav class="h-100" aria-label="Mobile navigation">
       <ul class="mobile-menu-links nav flex-column h-100 align-items-center justify-content-center text-center gap-4">
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/shop" aria-current="page">Shop</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html" aria-current="page">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
